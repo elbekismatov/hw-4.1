@@ -18,13 +18,12 @@ li {
 body {
   background-image: url(/src/img/Rectangle.png);
   background-repeat: no-repeat;
-  background-position: right(0px);
+  background-position: right top;
 }
 
 .container {
   width: 100%;
   max-width: 1174px;
-  padding: 0px 32px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +41,8 @@ header {
 }
 header .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1240px;
+  padding: 32px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,19 +88,24 @@ header .container .nav ul .login {
   opacity: 60%;
 }
 
-section .container {
+section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-section .container .img {
-  -webkit-transform: translateX(385px);
-      -ms-transform: translateX(385px);
-          transform: translateX(385px);
+section .img {
+  -webkit-transform: translateX(0px);
+      -ms-transform: translateX(0px);
+          transform: translateX(0px);
+}
+section .container {
+  width: 100%;
+  max-width: 550px;
+  padding: 0 0 0 32px;
 }
 section .container .information {
-  position: relative;
-  z-index: -1;
+  width: 100%;
+  max-width: 900px;
 }
 section .container .information .about {
   font-family: Barlow Condensed;
@@ -200,7 +205,7 @@ section .container .information div p {
             align-items: center;
   }
   header {
-    padding: 64px 0 124px 0;
+    padding: 38px 0 40px 0;
   }
   header .container {
     width: 100%;
@@ -250,7 +255,7 @@ section .container .information div p {
   header .container .nav ul .login {
     opacity: 60%;
   }
-  section .container {
+  section {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -260,12 +265,16 @@ section .container .information div p {
             flex-direction: column-reverse;
     padding: 0px;
   }
-  section .container .img {
+  section .img {
     -webkit-transform: translateX(32px);
         -ms-transform: translateX(32px);
             transform: translateX(32px);
     width: 343px;
     margin-bottom: 87px;
+  }
+  section .container {
+    max-width: 311px;
+    padding: 0px;
   }
   section .container .information {
     position: relative;
@@ -324,6 +333,7 @@ section .container .information div p {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 92px;
+    gap: 5px;
   }
   section .container .information div button {
     padding: 12px 25px;
